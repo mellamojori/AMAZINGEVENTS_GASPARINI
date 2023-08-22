@@ -1,0 +1,265 @@
+:root{
+        --darkblue: #241468;
+        --amazing:  #d90368;
+        --purple:   #9f0d7f;
+        --baby:     #FFD9DD;
+        --peachy:   #FFB07F;
+        --sand:     #FFECAF;
+        --concrete: #50666B;
+        --stormy:   #2E3B3E;
+        --bs-primary-rgb: 36, 20, 104;
+        --bs-secondary-rgb: 217, 3, 104;
+        --bs-success-rgb: 255, 236, 175;
+        --bs-danger-rgb: 159,13, 127;
+        --bs-primary-color: 36, 20, 104 !important;
+        --bs-secondary-color: 217, 3, 104 !important;
+        --bs-success-color: 255, 236, 175 !important;
+        --bs-danger-color: 159,13, 127 !important;
+        --bs-btn-focus-shadow-rgb: 59, 13, 127 !important;
+        --bs-btn-active-border-color: #9F0D7F !important;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom, #241468, #d90368);
+    background-repeat: no-repeat; 
+}
+
+img{
+    max-width: 100%;
+}
+
+.nav-link:hover{
+    color:#0dcaf0;
+}
+
+.banner{
+    height: 100px;    
+    object-fit: cover;
+    object-position: 0% 60%;
+}
+
+h1,.arrows{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#231468;
+    text-shadow: 3px 3px 3px #d90368;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: var(--sand) 0.7px ;
+} 
+
+.detail-card{
+    border-color: #0dcaf0 !important;
+    border-width: 3px !important;
+    border-radius: 15px;
+}
+
+footer,.media-icons>a{
+    font-weight: 600;
+    color: var(--darkblue);
+    font-size: 1rem;
+}
+
+.media-icons>a{
+    font-size:2rem;
+}
+
+.form-check-input {
+    background-color: rgb(255, 236, 175);
+    border: var(--purple) 3px solid;
+}
+
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.2rem  rgba(255, 217, 221, 0.463) !important;
+    border: #9F0D7F 1px solid;
+}
+
+.form-check-input:checked{
+    background-color: var(--amazing);
+    box-shadow: 0 0 0 0.2rem rgba(232, 219, 229, 0.25) !important;
+    border: #9F0D7F 1px solid;
+    background-image: var(--bs-form-check-bg-image);
+}
+
+.form-check-label{
+    color: var(--sand);
+}
+
+.form-control{
+    background-color: var(--sand);
+    border-radius: 0.5rem 0 0 0.5rem;
+    border-color: var(--darkblue);
+    border-width: 3px;
+    color: var(--sand)!important;
+}
+
+.form-control:focus{
+    background-color: var(--sand);
+    border-color: var(--purple);
+    color:var(--purple) !important;
+    box-shadow: 0 0 0 0.1rem rgba(159, 13, 127,.25);
+}
+
+.form-control::placeholder{
+    color: var(--purple) !important;
+}
+
+.d-flex>.btn{
+    background-color: var(--sand)!important;
+    border:#241468 solid 3px;
+    color: var(--purple);
+    border-radius: 0 0.5rem 0.5rem 0 ;
+    border-left: none;
+}
+
+.d-flex>.btn:hover{
+    background-color:var(--amazing)!important;
+    color:var(--sand);
+}
+
+.d-flex>.btn:focus{
+    background-color:var(--amazing)!important;
+    color:var(--sand);
+    box-shadow: 0 0 0 0.1rem rgba(159, 13, 127,.25)!important;
+}
+
+.btn-outline-success {
+    --bs-btn-active-border-color: #9F0D7F;
+}
+
+.card-text{
+    height:100px;
+    padding-top: 1rem;  
+}
+
+.btn-primary{
+    --bs-btn-color: var(--amazing);
+    --bs-btn-bg: var(--darkblue);
+    --bs-btn-border-color: var(--amazing);
+    --bs-btn-hover-color: var(--sand);
+    --bs-btn-hover-bg: var(--purple);
+    --bs-btn-hover-border-color: var(--sand);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: var(--purple);
+    --bs-btn-active-bg:var(--darkblue);
+    --bs-btn-active-border-color: var(--purple);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 100px;
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 0.3rem rgba(217, 3, 104, 0.466)!important;
+}
+
+.btn-outline-info {
+    --bs-btn-color: #0dcaf0;
+    --bs-btn-border-color: #0dcaf0;
+    --bs-btn-hover-color: #D90368 ;
+    --bs-btn-hover-bg: #0dcaf0;
+    --bs-btn-hover-border-color: #9F0D7F;
+    --bs-btn-focus-shadow-rgb: #9F0D7F;
+    --bs-btn-active-color: #0dcaf0;
+    --bs-btn-active-bg: #9F0D7F;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(159, 13, 127, 0.125);
+}
+
+.contact-form{
+        color: #0dcaf0!important;
+}
+    
+.form-control-contact:focus{
+        color:var(--baby) !important;
+        box-shadow: 0 0 0 0.1rem rgba(159, 13, 127,.25);
+}     
+
+.detail-card{
+    border-color: #0dcaf0 !important;
+    border-width: 3px !important;
+    border-radius: 15px;
+    height: 25rem;
+    border-style: solid;
+    margin: 5rem;
+}
+
+.detail-list-group{
+    list-style-type: none;
+}
+
+.table-stats,td,th,td{
+    border-width: 5px; 
+    border-collapse: collapse;
+    --bs-border-width: 5px;
+}
+
+footer,.media-icons>a{
+    font-weight: 600;
+    color: var(--darkblue);
+    font-size: 1rem;
+}
+
+.media-icons>a{
+    font-size:2rem;
+}
+
+.media-icons>a:hover{
+    color:#0dcaf0
+}
+
+
+    
+/*----------------------------------------------------------
+---------------- MEDIAQUERYS FOR MOBILE M + ----------------
+-----------------------------------------------------------*/
+@media only screen and (max-width:767px) {
+}
+
+/*----------------------------------------------------------
+------------------ MEDIAQUERYS FOR TABLET ------------------
+-----------------------------------------------------------*/
+@media only screen and (min-width:768px) and (max-width: 1023px){
+
+    .banner{
+        height: 160px;
+        object-position: 0% 50%;
+    }
+
+    h1,.arrows{
+        font-size: 3rem;
+        font-weight: 500;
+        color:#231468;
+        text-shadow: 3px 3px 3px #d90368;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        -webkit-text-stroke: var(--sand) 0.7px ;
+    }
+}
+
+/*----------------------------------------------------------
+----------------- MEDIAQUERYS FOR LAPTOP + -----------------
+-----------------------------------------------------------*/
+@media only screen and (min-width:1024px){
+
+    .banner{
+        height: 250px;
+        object-fit: cover;
+        object-position: 0% 50%;
+    }
+
+    h1,.arrows{
+        font-size: 5rem;
+        font-weight: 500;
+        color:#231468;
+        text-shadow: 3px 3px 3px #d90368;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        -webkit-text-stroke: var(--sand) 1px ;
+    }
+}

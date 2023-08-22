@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events | Amazing Events</title>
+    <link rel="shortcut icon" href="assets/img/brand/favicon-square.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img id="Aevents-logo" src="./assets/img/brand/amazing_brand.png" alt="Amazing Events Logo"
+                        width="200px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary fw-bold" href="#">Upcoming Events
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./past-events.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./stats.html">Stats</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide d-flex" data-bs-ride="carousel">
+            <div class="w-100 title z-1 position-absolute d-flex justify-content-between align-self-center">
+                <a href="./index.html"><i class="arrows bi bi-caret-left"></i></a>
+                <h1>UPCOMING EVENTS</h1>
+                <a href="./past-events.html"><i class="arrows bi bi-caret-right"></i></a>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/banner/optional_banner_1.jpg" class="banner d-block w-100" alt="banner1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/banner/optional_banner_2.jpg" class="banner d-block w-100" alt="banner2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/banner/optional_banner_3.jpg" class="banner d-block w-100" alt="banner3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/banner/optional_banner_4.jpg" class="banner d-block w-100" alt="banner4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/banner/optional_banner_5.jpg" class="banner d-block w-100" alt="banner5">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="gradient-background pb-5">
+        <div class="container py-3">
+            <div class="check-search row justify-content-between aligh-items-center m-0">
+                <div class="check-box align-self-center row pb-2 col-lg-8 pb-lg-0">
+                    <div class="col-4 col-sm-12">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Category</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Category</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">Category</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                            <label class="form-check-label" for="inlineCheckbox5">Category</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-bar col-12 col-lg-4">
+                    <div class="d-flex justify-content-end">
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <div class="events row justify-content-center g-3 p-3">
+                <div id="card3" class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card bg-primary text-success rounded-4 border-3 border-danger">
+                        <img src="./assets/img/costume_party.jpg" class="card-img-top rounded-top-4"
+                            alt="Halloween Night">
+                        <div class="card-body">
+                            <h5 class="card-title m-0 pb-2 text-center">Halloween Night</h5>
+                            <p class="card-text">Come in your scariest costume character to win amazing prizes.
+                            </p>
+                            <div class="row pe-2 justify-content-between">
+                                <p class="align-self-center m-0 col-6">Price: $12</p>
+                                <a href="./details.html" class="col-6 btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card4" class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card bg-primary text-success rounded-4 border-3 border-danger">
+                        <img src="./assets/img/music_concert.jpg" class="card-img-top rounded-top-4"
+                            alt="Metallica in concert">
+                        <div class="card-body">
+                            <h5 class="card-title m-0 pb-2 text-center">Metallica in concert</h5>
+                            <p class="card-text">The only concert of the most emblematic band in the world.
+                            </p>
+                            <div class="row pe-2 justify-content-between">
+                                <p class="align-self-center m-0 col-6">Price: $150</p>
+                                <a href="./details.html" class="col-6 btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card7" class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card bg-primary text-success rounded-4 border-3 border-danger">
+                        <img src="./assets/img/cinema.jpg" class="card-img-top rounded-top-4" alt="Movie premiere">
+                        <div class="card-body">
+                            <h5 class="card-title m-0 pb-2 text-center">Movie Premiere</h5>
+                            <p class="card-text">Marvel's Avengers 3d premiere the start of an
+                                epic saga with your best
+                                superheroes.</p>
+                            <div class="row pe-2 justify-content-between">
+                                <p class="align-self-center m-0 col-6">Price: $250</p>
+                                <a href="./details.html" class="col-6 btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-secondary pt-5">
+        <div class="row m-0 p-2 justify-content-between">
+            <div class="social-media pb-2 col-md-6 pb-md-0">
+                <div class="media-icons col-sm-12">
+                    <a href="#"><i class="bi pe-3 bi-facebook"></i></a>
+                    <a href="#"><i class="bi pe-3 bi-instagram"></i></a>
+                    <a href="#"><i class="bi pe-3 bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <p class="cohort m-0 col-md-6  text-end align-self-center">Mindhub&reg; 2023 | DW02TT</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384- HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
