@@ -26,6 +26,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body,html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
 .gradient-background {
     background: linear-gradient(to bottom, #241468, #d90368);
     background-repeat: no-repeat; 
@@ -188,7 +201,6 @@ footer,.media-icons>a{
     border-radius: 15px;
     height: 25rem;
     border-style: solid;
-    margin: 5rem;
 }
 
 .detail-list-group{
@@ -228,11 +240,6 @@ footer,.media-icons>a{
 -----------------------------------------------------------*/
 @media only screen and (min-width:768px) and (max-width: 1023px){
 
-    .banner{
-        height: 160px;
-        object-position: 0% 50%;
-    }
-
     h1,.arrows{
         font-size: 3rem;
         font-weight: 500;
@@ -247,12 +254,6 @@ footer,.media-icons>a{
 ----------------- MEDIAQUERYS FOR LAPTOP + -----------------
 -----------------------------------------------------------*/
 @media only screen and (min-width:1024px){
-
-    .banner{
-        height: 250px;
-        object-fit: cover;
-        object-position: 0% 50%;
-    }
 
     h1,.arrows{
         font-size: 5rem;
