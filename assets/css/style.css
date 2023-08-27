@@ -67,6 +67,11 @@ h1,.arrows{
     -webkit-text-stroke: var(--sand) 0.7px ;
 } 
 
+h1{
+    align-self: center;
+    margin: 0;
+}
+
 .detail-card{
     border-color: #0dcaf0 !important;
     border-width: 3px !important;
@@ -254,7 +259,6 @@ footer,.media-icons>a{
 ----------------- MEDIAQUERYS FOR LAPTOP + -----------------
 -----------------------------------------------------------*/
 @media only screen and (min-width:1024px){
-
     h1,.arrows{
         font-size: 5rem;
         font-weight: 500;
