@@ -55,7 +55,7 @@ img{
 .banner{
     height: 100px;    
     object-fit: cover;
-    object-position: 0% 60%;
+    object-position: 0% 55%;
 }
 
 h1,.arrows{
@@ -76,16 +76,6 @@ h1{
     border-color: #0dcaf0 !important;
     border-width: 3px !important;
     border-radius: 15px;
-}
-
-footer,.media-icons>a{
-    font-weight: 600;
-    color: var(--darkblue);
-    font-size: 1rem;
-}
-
-.media-icons>a{
-    font-size:2rem;
 }
 
 .form-check-input {
@@ -154,6 +144,11 @@ footer,.media-icons>a{
 .card-text{
     height:100px;
     padding-top: 1rem;  
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
 }
 
 .btn-primary{
