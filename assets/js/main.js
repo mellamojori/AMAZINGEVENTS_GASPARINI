@@ -14,6 +14,30 @@ function generateCards(itemsArray, idContainer) {
                             </div>
                         </div>
                     </div>`;
-                    document.getElementById(idContainer).innerHTML += card;
+        document.getElementById(idContainer).innerHTML += card;
     }
 }
+
+function getUnrepiteCategories(eventsArray) {
+    const categories = [];
+    for (const event of eventsArray) {
+        if (!categories.includes(event.category)) {
+            categories.push(event.category);
+        }
+    }
+    return categories;
+}
+
+
+function generateCheckboxes(itemsArray, idContainer) {
+    let index = 1;
+    for (const item of itemsArray) {
+        let checkbox = `<div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="${item}" value="option${index}">
+                            <label class="form-check-label" for="${item}">${item}</label>
+                        </div>`
+        document.getElementById(idContainer).innerHTML += checkbox;
+        index++;
+    }
+}
+

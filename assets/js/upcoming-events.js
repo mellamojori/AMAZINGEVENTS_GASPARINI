@@ -5,3 +5,7 @@ for (const event of data.events) {
     }
 }
 generateCards(upcomingEvents, "upcomingEventsContainer");
+
+const categories = getUnrepiteCategories (upcomingEvents);
+
+generateCheckboxes (categories, "checkboxContainer");
