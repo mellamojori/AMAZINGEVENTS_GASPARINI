@@ -72,19 +72,18 @@
     </div>
     </header>
 
-    <main class="gradient-background d-flex aligh-items-center">
-        <div class="container pt-2 align-self-center">
-            <div class="check-search row justify-content-between aligh-items-center m-0 pb-2">
+    <main class="gradient-background d-flex">
+        <div class="container py-2">
+            <div class="check-search row justify-content-between aligh-items-center m-0 py-2">
                 <div class="check-box align-self-center row pb-2 col-lg-8 pb-lg-0">
                     <div id="checkboxContainer" class="col-4 col-sm-12">
                     </div>
                 </div>
                 <div class="search-bar col-12 col-lg-4">
                     <div class="d-flex justify-content-end">
-                        <form class="d-flex" role="search">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><i
-                                    class="bi bi-search"></i></button>
+                        <form id="formId" class="d-flex" role="search" autocomplete="off">
+                            <input id="searchBarId" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button id="searchButtonId" class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
                         </form>
                     </div>
                 </div>
