@@ -1,24 +1,12 @@
-generateCards(data.events, "eventsContainer");
+let events = [];
 
-const unrepiteCategories = getUnrepiteCategories (data.events);
+fetchData(generateElements);
 
-generateCheckboxes (unrepiteCategories, "checkboxContainer");
+function generateElements(currentDate, allEvents){
+    events = allEvents
+    generateCards(events);
+    const unrepiteCategories = getUnrepiteCategories (events);
+    generateCheckboxes (unrepiteCategories);
+};
 
-
-let searchBar = document.getElementById ('searchBarId');
-let form = document.getElementById ('formId');
-
-searchBar.addEventListener ('input', () => {
-    fullFiltered(data.events, "eventsContainer");
-});
-
-form.addEventListener ('submit', e => {
-    e.preventDefault();
-    fullFiltered(data.events, "eventsContainer");
-});
-
-document.addEventListener('change', e => {
-    if (e.target.classList.contains('inputCheckbox')){
-        fullFiltered(data.events, "eventsContainer");
-    }
-});
+addEventsListeners();

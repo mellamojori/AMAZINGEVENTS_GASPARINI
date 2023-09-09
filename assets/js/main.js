@@ -1,4 +1,21 @@
-const generateCards = (itemsArray, idContainer) => {
+const apiURL     = "https://mindhub-xj03.onrender.com/api/amazing";
+let idContainer  = "eventsContainer";
+let errorMessage = 'Oh no! We were unable to retrieve events information at this time <i class="bi bi-emoji-dizzy"></i><br>Please try again later';
+
+async function fetchData(callback) {
+    try {
+        const response = await fetch(apiURL);
+        const data = await response.json();
+        const currentDate = data.currentDate;
+        let allEvents = data.events;
+        callback(currentDate, allEvents);
+
+    } catch (error) {
+        document.getElementById(idContainer).innerHTML = `<p class="text-info fs-4 text-center font-weight-bold font-italic py-5">${errorMessage}</p>`;
+    }
+}
+
+const generateCards = (itemsArray) => {
     let cardsHTML = "";
     itemsArray.forEach(item => {
         cardsHTML += `<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
@@ -24,10 +41,11 @@ const getUnrepiteCategories = (eventsArray) => {
     return categoriesArray.filter((category, index) => categoriesArray.indexOf(category) === index);
 }
 
-const generateCheckboxes = (itemsArray, idContainer) => {
+const generateCheckboxes = (itemsArray) => {
+    let idContainer = "checkboxContainer"
     let checkboxesHTML = "";
-    itemsArray.forEach ((item) =>{
-        checkboxesHTML +=  `<div class="form-check form-check-inline">
+    itemsArray.forEach((item) => {
+        checkboxesHTML += `<div class="form-check form-check-inline">
                                 <input class="inputCheckbox form-check-input" type="checkbox" id="${item}" value="${item}">
                                 <label class="form-check-label" for="${item}">${item}</label>
                             </div>`
@@ -35,18 +53,39 @@ const generateCheckboxes = (itemsArray, idContainer) => {
     document.getElementById(idContainer).innerHTML = checkboxesHTML;
 }
 
-function fullFiltered (array, idContainer){
+function fullFiltered(array, searchBar) {
     let filtered = array.filter(event => event.name.toLowerCase().includes(searchBar.value.trim().toLowerCase()));
     let inputCheckboxes = document.querySelectorAll('.inputCheckbox');
-    let checked = Array.from (inputCheckboxes);
+    let checked = Array.from(inputCheckboxes);
     checked = checked.filter(input => input.checked).map(input => input.value);
 
-        if (checked.length > 0) {
-            filtered = filtered.filter(event => checked.includes(event.category));
-        } 
-        if (filtered.length > 0) {
-            generateCards(filtered, idContainer); 
-        } else {
-            document.getElementById(idContainer).innerHTML = '<p class="text-info fs-4 text-center font-weight-bold font-italic py-5">Sorry, at the moment there are no events that match your search <i class="bi bi-emoji-frown"></i></p>'
-        }
+    if (checked.length > 0) {
+        filtered = filtered.filter(event => checked.includes(event.category));
+    }   
+    if (filtered.length > 0) {
+        generateCards(filtered, idContainer);
+    } else {
+        document.getElementById(idContainer).innerHTML = '<p class="text-info fs-4 text-center font-weight-bold font-italic py-5">Sorry, at the moment there are no events that match your search <i class="bi bi-emoji-frown"></i></p>'
+    }
 };
+
+function addEventsListeners() {
+    let searchBar = document.getElementById('searchBarId');
+    let form = document.getElementById('formId');
+
+    searchBar.addEventListener('input', () => {
+        fullFiltered(events, searchBar);
+    });
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fullFiltered(events, searchBar);
+    });
+
+    document.addEventListener('change', e => {
+        if (e.target.classList.contains('inputCheckbox')) {
+            fullFiltered(events, searchBar);
+        }
+    });
+}
+

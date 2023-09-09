@@ -1,25 +1,12 @@
-let upcomingEvents = data.events.filter (event => event.date > data.currentDate);
+let events = [];
 
-generateCards(upcomingEvents, "upcomingEventsContainer");
+fetchData(generateElements);
 
-const unrepiteCategories = getUnrepiteCategories (upcomingEvents);
+function generateElements(currentDate, allEvents){
+    events = allEvents.filter (event => event.date > currentDate);
+    generateCards(events);
+    const unrepiteCategories = getUnrepiteCategories (events);
+    generateCheckboxes (unrepiteCategories);
+};
 
-generateCheckboxes (unrepiteCategories, "checkboxContainer");
-
-let searchBar = document.getElementById ('searchBarId');
-let form = document.getElementById ('formId');
-
-searchBar.addEventListener ('input', () => {
-    fullFiltered(upcomingEvents, "upcomingEventsContainer");
-});
-
-form.addEventListener ('submit', e => {
-    e.preventDefault();
-    fullFiltered(upcomingEvents, "upcomingEventsContainer");
-})
-
-document.addEventListener('change', e => {
-    if (e.target.classList.contains('inputCheckbox')){
-        fullFiltered(upcomingEvents, "upcomingEventsContainer");
-    }
-});
+addEventsListeners();

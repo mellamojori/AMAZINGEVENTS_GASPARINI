@@ -58,7 +58,7 @@ img{
     object-position: 0% 55%;
 }
 
-h1,.arrows, #dTitle{
+h1,.arrows, #dTitle, .tableTitle{
     font-size: 2rem;
     font-weight: 500;
     color:#231468;
@@ -196,7 +196,8 @@ h1{
 }     
 
 .detailImage{
-    width: 550px;
+    width: 100%;
+    height: 350px;
     object-fit: cover;
     border-bottom-left-radius:3%;
     border: double 5px #a394aa;
