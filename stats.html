@@ -74,46 +74,50 @@
     </header>
 
     <main class="gradient-background d-flex">
-        <div id="statsContainer" class="container d-flex flex-column justify-content-center align-items-center py-3">
-            <table id="events-stats" class=" table border-info m-0">
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tableTitle bg-transparent text-info">Events Statistics</th>
-                    </tr>
-                    <tr>
-                        <th class="bg-transparent text-info fs-5">Events with highest % of assistance</th>
-                        <th class="bg-transparent text-info fs-5">Events with lowest % of assistance</th>
-                        <th class="bg-transparent text-info fs-5">Events with larger capacity</th>
-                    </tr>
-                </thead>
-                <tbody id="allStats">
-                </tbody>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tableTitle bg-transparent text-info">Upcoming events statistics by category
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="bg-transparent text-info fs-5">Categories</th>
-                        <th class="bg-transparent text-info fs-5">Revenues</th>
-                        <th class="bg-transparent text-info fs-5">Percentage of assistance</th>
-                    </tr>
-                </thead>
-                <tbody id="upcomingStats">
-                </tbody>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="tableTitle bg-transparent text-info">Past events statistics by category</th>
-                    </tr>
-                    <tr>
-                        <th class="bg-transparent text-info fs-5">Categories</th>
-                        <th class="bg-transparent text-info fs-5">Revenues</th>
-                        <th class="bg-transparent text-info fs-5">Percentage of assistance</th>
-                    </tr>
-                </thead>
-                <tbody id="pastStats">
-                </tbody>
-            </table>
+        <div id="statsContainer" class="container py-3">
+            <div class="table-responsive">
+                <table id="events-stats" class=" table border-info">
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="tableTitle bg-transparent text-info">Events Statistics</th>
+                        </tr>
+                        <tr>
+                            <th class="bg-transparent text-info fs-4">Events with highest % of assistance</th>
+                            <th class="bg-transparent text-info fs-4">Events with lowest % of assistance</th>
+                            <th class="bg-transparent text-info fs-4">Events with larger capacity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="allStats">
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="tableTitle bg-transparent text-info">Upcoming events statistics by
+                                category
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="bg-transparent text-info fs-4">Categories</th>
+                            <th class="bg-transparent text-info fs-4">Proyected revenues</th>
+                            <th class="bg-transparent text-info fs-4">Proyected percentage of assistance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="upcomingStats">
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="tableTitle bg-transparent text-info">Past events statistics by
+                                category</th>
+                        </tr>
+                        <tr>
+                            <th class="bg-transparent text-info fs-4">Categories</th>
+                            <th class="bg-transparent text-info fs-4">Revenues</th>
+                            <th class="bg-transparent text-info fs-4">Percentage of assistance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pastStats">
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 
@@ -130,7 +134,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/stats.js"></script>
 </body>
