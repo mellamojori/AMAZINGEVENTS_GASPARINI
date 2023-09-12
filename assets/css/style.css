@@ -204,14 +204,12 @@ h1{
     
 }
 
-.table-stats,td,th{
+td,th{
     border-width: 5px; 
     border-collapse: collapse;
     --bs-border-width: 5px;
-}
-
-td, th{
     min-width: 10rem;
+    width: 15rem;
 }
 
 footer,.media-icons>a{
