@@ -17,9 +17,9 @@ function getEventsStats(currentDate, allEvents) {
 
     for (let i = 0; i < 3; i++) {
         tbodyHTML += `<tr>
-            <td class="bg-transparent text-info">${highestAssistanceEvents[i].name}</td>
-            <td class="bg-transparent text-info">${lowestAssistanceEvents[i].name}</td>
-            <td class="bg-transparent text-info">${largerCapacityEvents[i].name}</td>
+            <td class="bg-transparent text-info fs-5">${highestAssistanceEvents[i].name}</td>
+            <td class="bg-transparent text-info fs-5">${lowestAssistanceEvents[i].name}</td>
+            <td class="bg-transparent text-info fs-5">${largerCapacityEvents[i].name}</td>
         </tr>`;
     }
 
@@ -41,9 +41,9 @@ function getEventsStats(currentDate, allEvents) {
     tbodyHTML = "";
     upcomingEventsStatsByCategory.forEach(stats => {
         tbodyHTML += `<tr>
-        <td class="bg-transparent text-info">${stats.category}</td>
-        <td class="bg-transparent text-info">$${stats.proyectedRevenueByCategory}</td>
-        <td class="bg-transparent text-info">${stats.proyectedPercentageAssistance}%</td>
+        <td class="bg-transparent text-info fs-5">${stats.category}</td>
+        <td class="bg-transparent text-info fs-5">$${stats.proyectedRevenueByCategory}</td>
+        <td class="bg-transparent text-info fs-5">${stats.proyectedPercentageAssistance}%</td>
     </tr>`;
     });
 
@@ -65,9 +65,9 @@ function getEventsStats(currentDate, allEvents) {
     tbodyHTML = "";
     pastEventsStatsByCategory.forEach(stats => {
         tbodyHTML += `<tr>
-        <td class="bg-transparent text-info">${stats.category}</td>
-        <td class="bg-transparent text-info">$${stats.revenueByCategory}</td>
-        <td class="bg-transparent text-info">${stats.percentageAssistance}%</td>
+        <td class="bg-transparent text-info fs-5">${stats.category}</td>
+        <td class="bg-transparent text-info fs-5">$${stats.revenueByCategory}</td>
+        <td class="bg-transparent text-info fs-5">${stats.percentageAssistance}%</td>
     </tr>`;
     });
 
